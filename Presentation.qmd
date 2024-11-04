@@ -5,7 +5,7 @@ format:
   revealjs:
         slide-number: true
         preview-links: true
-        theme: default
+        theme: sandstone
 ---
 ## About Revealjs
 
