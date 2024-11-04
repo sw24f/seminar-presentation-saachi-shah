@@ -1,10 +1,12 @@
 ---
 title: "Presentation"
 subtitle: "STAT 3494W Undergraduate Seminar | Fall 2024"
+author: Saachi Shah
 format:
   revealjs:
         slide-number: true
         preview-links: true
+        footer: "Saachi Shah"
         theme: sandstone
 ---
 ## About Revealjs
