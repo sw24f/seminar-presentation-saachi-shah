@@ -7,7 +7,7 @@ format:
         slide-number: true
         preview-links: true
         footer: "Saachi Shah"
-        theme: sandstone
+        theme: default
 ---
 
 # Introduction
@@ -27,16 +27,19 @@ format:
 - **Approach**: Uses theories and hypotheses about data-generating processes.
 - **Evaluation**: Focuses on goodness-of-fit, parameter significance, and theoretical validity.
 
-## Explanatory vs. Predictive Modeling
-
-- Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness-of-fit
-- Predictive models prioritize maximizing out-of-sample predictive accuracy and are assessed using out-of-sample predictive accuracy measures
-
 ### Predictive Modeling
 
 - **Goal**: Accurately predict future or unseen data.
 - **Approach**: Prioritizes performance over theoretical understanding.
 - **Evaluation**: Focuses on prediction accuracy and error rates (e.g., RMSE, MAE).
+
+---
+
+---
+## Explanatory vs. Predictive Modeling
+
+- Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness-of-fit
+- Predictive models prioritize maximizing out-of-sample predictive accuracy and are assessed using out-of-sample predictive accuracy measures
 
 ---
 
