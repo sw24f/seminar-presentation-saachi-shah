@@ -1,0 +1,106 @@
+---
+title: "To Explain or To Predict? Galit Shmueli (2010)"
+subtitle: "STAT 3494W Undergraduate Seminar | Fall 2024"
+author: "Saachi Shah"
+format:
+  revealjs:
+        slide-number: true
+        preview-links: true
+        footer: "Saachi Shah"
+        theme: default
+---
+
+# Introduction
+
+- **Paper**: *"To Explain or To Predict?"*
+- **Author**: Galit Shmueli
+- **Published**: Statistical Science, 2010
+- **Key Idea**: Differentiating between **explanatory modeling** (understanding data relationships) and **predictive modeling** (forecasting future outcomes).
+
+---
+
+# Explanatory vs. Predictive Modeling
+
+### Explanatory Modeling
+
+- **Goal**: Understand causal relationships within data.
+- **Approach**: Uses theories and hypotheses about data-generating processes.
+- **Evaluation**: Focuses on goodness-of-fit, parameter significance, and theoretical validity.
+
+### Predictive Modeling
+
+- **Goal**: Accurately predict future or unseen data.
+- **Approach**: Prioritizes performance over theoretical understanding.
+- **Evaluation**: Focuses on prediction accuracy and error rates (e.g., RMSE, MAE).
+
+---
+
+---
+## Explanatory vs. Predictive Modeling
+
+- Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness-of-fit
+- Predictive models prioritize maximizing out-of-sample predictive accuracy and are assessed using out-of-sample predictive accuracy measures
+
+---
+
+# Why Does This Distinction Matter?
+
+- **Different Requirements**: Models for explanation and prediction require different design, validation, and interpretation.
+- **Common Misconceptions**: Explanatory models often assumed to predict, but they may fail at that task.
+- **Risk of Misinterpretation**: Incorrectly applying explanatory models for prediction can lead to faulty decisions.
+
+---
+
+# Example: Health Research
+
+- **Explanatory**: Studying factors influencing heart disease (e.g., diet, lifestyle) to understand causation.
+- **Predictive**: Using patient data to predict who is likely to develop heart disease, regardless of causation.
+
+**Takeaway**: The insights needed for prevention policies vs. medical forecasting differ significantly.
+
+---
+
+# Modeling and Validation Differences
+
+### Explanatory Models
+
+- **Statistical Tests**: P-values, confidence intervals.
+- **Fit Metrics**: R-squared, adjusted R-squared.
+- **Focus**: Interpretable coefficients.
+
+### Predictive Models
+
+- **Performance Metrics**: Accuracy, RMSE, AUC.
+- **Cross-validation**: Training and testing on separate datasets.
+- **Focus**: Out-of-sample prediction accuracy.
+
+---
+
+# Implications for Data Science
+
+- **Increasing Use of Predictive Models**: As data science grows, predictive models are becoming more popular in traditionally explanatory fields.
+- **Importance of Purpose-Driven Modeling**: Misalignment between model goals and applications can lead to significant real-world errors.
+- **Ethical Considerations**: Incorrect model application can have societal consequences (e.g., in policy or healthcare).
+
+---
+
+# Practical Takeaways
+
+1. **Clarify Goals**: Define whether the goal is to explain or predict before modeling.
+2. **Choose Models Accordingly**: Select model types, validation, and evaluation criteria based on the goal.
+3. **Avoid Misuse**: Be cautious of applying explanatory models for prediction, and vice versa.
+4. **Communicate Assumptions**: Clearly state assumptions and limitations, especially if using a model outside its intended purpose.
+
+---
+
+# Conclusion
+
+- **Main Message**: "To Explain or To Predict?" urges practitioners to consciously distinguish between explanatory and predictive goals.
+- **Shmueli’s Contribution**: Emphasizes the importance of matching model types to their specific goals, and the consequences of ignoring this distinction.
+- **Enduring Relevance**: Shmueli's insights continue to guide best practices in data science, helping prevent misuse of models.
+
+---
+
+# Questions?
+
+Thank you!
