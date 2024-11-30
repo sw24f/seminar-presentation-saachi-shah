@@ -36,10 +36,10 @@ format:
 ---
 
 ---
-## Explanatory vs. Predictive Modeling
+# Explanatory vs. Predictive Modeling
 
-- Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness-of-fit
-- Predictive models prioritize maximizing out-of-sample predictive accuracy and are assessed using out-of-sample predictive accuracy measures
+- Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness of fit
+- Predictive models prioritize maximizing out of sample predictive accuracy and are assessed using out of sample predictive accuracy measures
 
 ---
 
