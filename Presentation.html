@@ -345,40 +345,308 @@ Saachi Shah
 <li><strong>Paper</strong>: <em>“To Explain or To Predict?”</em></li>
 <li><strong>Author</strong>: Galit Shmueli</li>
 <li><strong>Published</strong>: Statistical Science, 2010</li>
-<li><strong>Key Idea</strong>: Differentiating between <strong>explanatory modeling</strong> (understanding data relationships) and <strong>predictive modeling</strong> (forecasting future outcomes).</li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="about-galit-shmuei" class="slide level2">
+<h2>About Galit Shmuei</h2>
+<ul>
+<li>Born in Israel, studied at University of Haifa and Technion</li>
+<li>Distinguished Professor at National Tsing Hua University</li>
+<li>Fields: Data Science, Statistics</li>
+<li>Best Known for his distinction between explanation and prediction in statistical analyses</li>
+<li>Books:
+<ul>
+<li>Data Mining for Business Intelligence</li>
+<li>Statistical Methods in eCommerce Research</li>
+<li>Modeling Online Auctions</li>
+</ul></li>
+<li>Fellow of the Institute of Mathematical Statistics, Elected Member of the International Statistical Institute</li>
+</ul>
+</section>
+<section id="key-ideas" class="slide level2">
+<h2>Key Ideas</h2>
+<ul>
+<li>Differentiating between <strong>explanatory modeling</strong> (understanding data relationships) and <strong>predictive modeling</strong> (forecasting future outcomes).</li>
+</ul>
 </section></section>
 <section>
-<section id="explanatory-vs.-predictive-modeling" class="title-slide slide level1 center">
-<h1>Explanatory vs.&nbsp;Predictive Modeling</h1>
+<section id="different-types-of-modeling" class="title-slide slide level1 center">
+<h1>Different Types of Modeling</h1>
 
 </section>
-<h3 id="explanatory-modeling">Explanatory Modeling</h3>
+<section id="explanatory-modeling" class="slide level2">
+<h2>Explanatory Modeling</h2>
 <ul>
 <li><strong>Goal</strong>: Understand causal relationships within data.</li>
-<li><strong>Approach</strong>: Uses theories and hypotheses about data-generating processes.</li>
-<li><strong>Evaluation</strong>: Focuses on goodness-of-fit, parameter significance, and theoretical validity.</li>
-</ul>
-<section id="explanatory-vs.-predictive-modeling-1" class="slide level2">
-<h2>Explanatory vs.&nbsp;Predictive Modeling</h2>
-<ul>
-<li>Explanatory models aim to understand relationships and uncover causal mechanisms and are based on statistical significance, effect sizes, goodness-of-fit</li>
-<li>Predictive models prioritize maximizing out-of-sample predictive accuracy and are assessed using out-of-sample predictive accuracy measures</li>
-</ul>
-<h3 id="predictive-modeling">Predictive Modeling</h3>
-<ul>
-<li><strong>Goal</strong>: Accurately predict future or unseen data.</li>
-<li><strong>Approach</strong>: Prioritizes performance over theoretical understanding.</li>
-<li><strong>Evaluation</strong>: Focuses on prediction accuracy and error rates (e.g., RMSE, MAE).</li>
+<li><strong>Focus</strong>: Interpretable coefficients</li>
+<li>Uses theories and hypotheses about data-generating processes</li>
+<li>In the social sciences, causal hypotheses are typically association based models applied to observational data</li>
+<li>Focuses on goodness-of-fit, parameter significance, and theoretical validity</li>
+<li><strong>Example</strong>: Investigating the factors that cause higher grades in the first semester compared to the second semester for undergraduate students</li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="predictive-modeling" class="slide level2">
+<h2>Predictive Modeling</h2>
+<ul>
+<li><strong>Goal</strong>: Accurately predict future or unseen data</li>
+<li><strong>Focus</strong>: Out-of-sample prediction accuracy.</li>
+<li>Shmeuli focus on “nonstochastic prediction”</li>
+<li>Prioritizes performance over theoretical understanding</li>
+<li>Focuses on prediction accuracy and error rates (e.g., RMSE, MAE)</li>
+<li><strong>Example</strong>: Predicting loan defaults in the banking sector</li>
+</ul>
+</section>
+<section id="descriptive-modeling" class="slide level2">
+<h2>Descriptive Modeling</h2>
+<ul>
+<li><strong>Goal</strong>: Summarize and understand past data structures</li>
+<li>Focuses on identifying patterns and trends on a measurable level rather than a construct level</li>
+<li>Uses metrics like mean, median, and standard deviation</li>
+<li><strong>Example</strong>: Analyzing sales data to identify trends and patterns</li>
+</ul>
 </section></section>
 <section>
+<section id="why-are-explaining-and-predicting-different" class="title-slide slide level1 center">
+<h1>Why are Explaining and Predicting Different?</h1>
+
+</section>
+<section id="construct-differences" class="slide level2">
+<h2>Construct Differences</h2>
+<ul>
+<li>Consider two different construct scenarios:
+<ul>
+<li>Hypothesize that construct <em>X</em> causes construct <em>Y</em> via function <em>F</em> such that <em>Y</em> = <em>F</em>(<em>X</em>)</li>
+<li>Measurable variables X and Y are operationalizations of <em>X</em> and <em>Y</em>, respectively</li>
+<li>The statistical model <em>F</em> is operationalized into a statistical model <em>f</em>, such as E(Y) = <em>f</em>(X)</li>
+</ul></li>
+</ul>
+<p>This is where the disparity between explanatory and predictive modeling emerges</p>
+<ul>
+<li>Explanatory models aim to match <em>F</em> and <em>f</em> as closely as possible</li>
+<li>Predictive models aim to use X, Y, and <em>f</em> to generate the best possible predictions of new Y values</li>
+</ul>
+</section>
+<section id="causation-vs.-association" class="slide level2">
+<h2>Causation vs.&nbsp;Association</h2>
+<ul>
+<li>Explanatory: Model f represents a causal function, X causes Y</li>
+<li>Predictive: Model f captures association between X and Y</li>
+</ul>
+</section>
+<section id="theory-vs.-data" class="slide level2">
+<h2>Theory vs.&nbsp;Data</h2>
+<ul>
+<li>Explanatory: Model f based on F to interpret X-Y relationship and test causal hypotheses</li>
+<li>Predictive: Model f derived from data; interpretability optional, transparency sometimes desired</li>
+</ul>
+</section>
+<section id="retrospective-vs.-prospective" class="slide level2">
+<h2>Retrospective vs.&nbsp;Prospective</h2>
+<ul>
+<li>Explanatory: Retrospective, tests existing hypotheses</li>
+<li>Predictive: Prospective, built for new observations</li>
+</ul>
+</section>
+<section id="bias-vs.-variance" class="slide level2">
+<h2>Bias vs.&nbsp;Variance</h2>
+<ul>
+<li>Explanatory: Minimize bias for accurate theory representation</li>
+<li>Predictive: Balance bias and variance; sometimes sacrifice accuracy for precision</li>
+<li>“Wrong” model may predict better than “correct” one</li>
+</ul>
+</section>
+<section id="void-in-the-statistics-literature" class="slide level2">
+<h2>Void in the Statistics Literature</h2>
+<ul>
+<li>Debate on explaining vs.&nbsp;predicting not fully translated into statistical language</li>
+<li>Significant gap in model selection with finite/noisy data (Konishi &amp; Kitagawa, 2007)</li>
+<li>Focus on prediction in machine learning and statistics</li>
+<li>Importance of evaluating predictive power using holdout data</li>
+</ul>
+</section></section>
+<section>
+<section id="modeling-differences" class="title-slide slide level1 center">
+<h1>Modeling Differences</h1>
+<p>Modeling can be broken down in a generic set of steps that vary when the focus changes from explanation to predicion</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Define Goal</td>
+<td>Design Study &amp; Collect Data</td>
+<td>Prepare Data</td>
+<td>Exploratory Data Analysis</td>
+<td>Choose Variables</td>
+<td>Choose Methods</td>
+<td>Evaluate, Validate, &amp; Model Selection</td>
+<td>Use Model &amp; Report</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="design-study-collect-data" class="slide level2">
+<h2>Design Study &amp; Collect Data</h2>
+<ul>
+<li><strong>Sample Size</strong>:
+<ul>
+<li>Explanatory: Adequate precision for inference, statistical power</li>
+<li>Predictive: Larger sample for lower bias/variance, holdout datasets</li>
+</ul></li>
+<li><strong>Sampling Scheme</strong>:
+<ul>
+<li>Explanatory: Focus on group number (J)</li>
+<li>Predictive: Focus on group size (n)</li>
+</ul></li>
+<li><strong>Experimental vs.&nbsp;Observational</strong>:
+<ul>
+<li>Explanatory: Prefer experimental data</li>
+<li>Predictive: Observational data may be better for realistic context</li>
+</ul></li>
+<li><strong>Data Collection Instrument</strong>:
+<ul>
+<li>Explanatory: Reliable and valid instruments</li>
+<li>Predictive: Focus on measurement quality</li>
+</ul></li>
+</ul>
+</section>
+<section id="prepare-data" class="slide level2">
+<h2>Prepare Data</h2>
+<ul>
+<li><strong>Handling Missing Values</strong>:
+<ul>
+<li>Explanatory: Imputation methods, focus on missingness classification (MAR, MCAR, NMAR)</li>
+<li>Predictive: Depends on training/prediction data, use of dummy variables, multiple reduced models</li>
+</ul></li>
+<li><strong>Data Partitioning</strong>:
+<ul>
+<li>Avoid overoptimistic accuracy by using holdout samples</li>
+<li>Methods: Random partitioning, cross-validation, bootstrap</li>
+<li>Aim: Minimize combined bias and variance</li>
+</ul></li>
+</ul>
+</section>
+<section id="exploratory-data-analysis" class="slide level2">
+<h2>Exploratory Data Analysis</h2>
+<ul>
+<li><strong>Purpose</strong>:
+<ul>
+<li>Explanatory: Channel exploration toward causal relationships</li>
+<li>Predictive: Free-form exploration to capture unknown relationships</li>
+</ul></li>
+<li><strong>Data Visualization</strong>:
+<ul>
+<li>Explanatory: Confirmatory, hypothesis-driven</li>
+<li>Predictive: Exploratory, interactive</li>
+</ul></li>
+<li><strong>Numerical Summaries</strong>:
+<ul>
+<li>Explanatory: Focus on theoretical relationships</li>
+<li>Predictive: Wide range of summaries for all variables</li>
+</ul></li>
+<li><strong>Dimension Reduction</strong>:
+<ul>
+<li>Explanatory: Validate survey instruments (e.g., PCA, factor analysis)</li>
+<li>Predictive: Reduce predictors to lower variance (e.g., PCA, SVD)</li>
+</ul></li>
+</ul>
+</section>
+<section id="choose-variables" class="slide level2">
+<h2>Choose Variables</h2>
+<ul>
+<li><strong>Explanatory Modeling</strong>:
+<ul>
+<li>Variables as operationalized constructs</li>
+<li>Based on theoretical causal structure</li>
+<li>Examples: antecedent, consequent, mediator, moderator, treatment, control, exposure, confounding</li>
+<li>Focus on causality and bias (e.g., endogeneity, instrumental variables)</li>
+</ul></li>
+<li><strong>Predictive Modeling</strong>:
+<ul>
+<li>Focus on association, not causation</li>
+<li>Criteria: quality of association, data quality, ex-ante availability</li>
+<li>Variables must be available at the time of prediction</li>
+</ul></li>
+</ul>
+</section>
+<section id="choose-methods" class="slide level2">
+<h2>Choose Methods</h2>
+<ul>
+<li><strong>Explanatory Modeling</strong>:
+<ul>
+<li>Requires interpretable statistical models (e.g., regression)</li>
+<li>Algorithmic methods (e.g., neural networks) are unsuitable</li>
+</ul></li>
+<li><strong>Predictive Modeling</strong>:
+<ul>
+<li>Focus on accurate predictions</li>
+<li>Uses statistical models and data mining algorithms</li>
+<li>Examples: neural networks, k-nearest-neighbors, ensemble methods (bagging, random forests, boosting)</li>
+</ul></li>
+<li><strong>Bias-Variance Trade-off</strong>:
+<ul>
+<li>Shrinkage methods (e.g., ridge regression) reduce variance</li>
+<li>Ensemble methods improve prediction accuracy</li>
+</ul></li>
+</ul>
+</section>
+<section id="evaluate-validate-model-selection" class="slide level2">
+<h2>Evaluate, Validate, &amp; Model Selection</h2>
+<ul>
+<li><strong>Validation</strong>:
+<ul>
+<li>Explanatory: Validate model representation (f ≈ F) and fit (fˆ fits {X, Y})</li>
+<li>Predictive: Focus on generalization, avoid overfitting (compare training vs.&nbsp;holdout sets)</li>
+</ul></li>
+<li><strong>Model Evaluation</strong>:
+<ul>
+<li>Explanatory: Assess explanatory power (strength of relationship)</li>
+<li>Predictive: Assess predictive power (accuracy on new data)</li>
+</ul></li>
+<li><strong>Model Selection</strong>:
+<ul>
+<li>Iterative process</li>
+<li>Different criteria for explanatory vs.&nbsp;predictive contexts</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-model-report" class="slide level2">
+<h2>Use Model &amp; Report</h2>
+<ul>
+<li><strong>Explanatory Models</strong>:
+<ul>
+<li>Focus: Theory, causality, bias, retrospective analysis</li>
+<li>Use: Derive statistical conclusions, test causal theories</li>
+<li>Reporting: Emphasize statistical inference</li>
+</ul></li>
+<li><strong>Predictive Models</strong>:
+<ul>
+<li>Focus: Data, association, bias-variance, prospective analysis</li>
+<li>Use: Generate predictions for new data</li>
+<li>Reporting: Emphasize predictive power, model comparison</li>
+</ul></li>
+</ul>
+</section></section>
 <section id="why-does-this-distinction-matter" class="title-slide slide level1 center">
 <h1>Why Does This Distinction Matter?</h1>
 <ul>
@@ -387,78 +655,44 @@ Saachi Shah
 <li><strong>Risk of Misinterpretation</strong>: Incorrectly applying explanatory models for prediction can lead to faulty decisions.</li>
 </ul>
 </section>
-<section class="slide level2">
 
-</section></section>
-<section>
 <section id="example-health-research" class="title-slide slide level1 center">
 <h1>Example: Health Research</h1>
 <ul>
-<li><strong>Explanatory</strong>: Studying factors influencing heart disease (e.g., diet, lifestyle) to understand causation.</li>
-<li><strong>Predictive</strong>: Using patient data to predict who is likely to develop heart disease, regardless of causation.</li>
+<li><strong>Explanatory</strong>: Studying factors influencing heart disease (e.g., diet, lifestyle) to understand causation</li>
+<li><strong>Predictive</strong>: Using patient data to predict who is likely to develop heart disease, regardless of causation</li>
 </ul>
-<p><strong>Takeaway</strong>: The insights needed for prevention policies vs.&nbsp;medical forecasting differ significantly.</p>
+<p><strong>Takeaway</strong>: The insights needed for prevention policies vs.&nbsp;medical forecasting differ significantly</p>
 </section>
-<section class="slide level2">
 
-</section></section>
-<section>
-<section id="modeling-and-validation-differences" class="title-slide slide level1 center">
-<h1>Modeling and Validation Differences</h1>
-
-</section>
-<h3 id="explanatory-models">Explanatory Models</h3>
-<ul>
-<li><strong>Statistical Tests</strong>: P-values, confidence intervals.</li>
-<li><strong>Fit Metrics</strong>: R-squared, adjusted R-squared.</li>
-<li><strong>Focus</strong>: Interpretable coefficients.</li>
-</ul>
-<h3 id="predictive-models">Predictive Models</h3>
-<ul>
-<li><strong>Performance Metrics</strong>: Accuracy, RMSE, AUC.</li>
-<li><strong>Cross-validation</strong>: Training and testing on separate datasets.</li>
-<li><strong>Focus</strong>: Out-of-sample prediction accuracy.</li>
-</ul>
-<section class="slide level2">
-
-</section></section>
-<section>
 <section id="implications-for-data-science" class="title-slide slide level1 center">
 <h1>Implications for Data Science</h1>
 <ul>
-<li><strong>Increasing Use of Predictive Models</strong>: As data science grows, predictive models are becoming more popular in traditionally explanatory fields.</li>
-<li><strong>Importance of Purpose-Driven Modeling</strong>: Misalignment between model goals and applications can lead to significant real-world errors.</li>
-<li><strong>Ethical Considerations</strong>: Incorrect model application can have societal consequences (e.g., in policy or healthcare).</li>
+<li><strong>Increasing Use of Predictive Models</strong>: As data science grows, predictive models are becoming more popular in traditionally explanatory fields</li>
+<li><strong>Importance of Purpose-Driven Modeling</strong>: Misalignment between model goals and applications can lead to significant real-world errors</li>
+<li><strong>Ethical Considerations</strong>: Incorrect model application can have societal consequences (e.g., in policy or healthcare)</li>
 </ul>
 </section>
-<section class="slide level2">
 
-</section></section>
-<section>
 <section id="practical-takeaways" class="title-slide slide level1 center">
 <h1>Practical Takeaways</h1>
 <ol type="1">
-<li><strong>Clarify Goals</strong>: Define whether the goal is to explain or predict before modeling.</li>
-<li><strong>Choose Models Accordingly</strong>: Select model types, validation, and evaluation criteria based on the goal.</li>
-<li><strong>Avoid Misuse</strong>: Be cautious of applying explanatory models for prediction, and vice versa.</li>
-<li><strong>Communicate Assumptions</strong>: Clearly state assumptions and limitations, especially if using a model outside its intended purpose.</li>
+<li><strong>Clarify Goals</strong>: Define whether the goal is to explain or predict before modeling</li>
+<li><strong>Choose Models Accordingly</strong>: Select model types, validation, and evaluation criteria based on the goal</li>
+<li><strong>Avoid Misuse</strong>: Be cautious of applying explanatory models for prediction, and vice versa</li>
+<li><strong>Communicate Assumptions</strong>: Clearly state assumptions and limitations, especially if using a model outside its intended purpose</li>
 </ol>
 </section>
-<section class="slide level2">
 
-</section></section>
-<section>
 <section id="conclusion" class="title-slide slide level1 center">
 <h1>Conclusion</h1>
 <ul>
-<li><strong>Main Message</strong>: “To Explain or To Predict?” urges practitioners to consciously distinguish between explanatory and predictive goals.</li>
-<li><strong>Shmueli’s Contribution</strong>: Emphasizes the importance of matching model types to their specific goals, and the consequences of ignoring this distinction.</li>
-<li><strong>Enduring Relevance</strong>: Shmueli’s insights continue to guide best practices in data science, helping prevent misuse of models.</li>
+<li><strong>Main Message</strong>: “To Explain or To Predict?” urges practitioners to consciously distinguish between explanatory and predictive goals</li>
+<li><strong>Shmueli’s Contribution</strong>: Emphasizes the importance of matching model types to their specific goals, and the consequences of ignoring this distinction</li>
+<li><strong>Enduring Relevance</strong>: Shmueli’s insights continue to guide best practices in data science, helping prevent misuse of models</li>
 </ul>
 </section>
-<section class="slide level2">
 
-</section></section>
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions?</h1>
 <p>Thank you!</p>
