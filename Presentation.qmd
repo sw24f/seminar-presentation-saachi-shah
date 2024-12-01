@@ -84,7 +84,7 @@ This is where the disparity between explanatory and predictive modeling emerges
 - Explanatory: Retrospective, tests existing hypotheses
 - Predictive: Prospective, built for new observations
 
-## Bias vs. Variance
+## Bias vs. Variance (explain more)
 - Explanatory: Minimize bias for accurate theory representation
 - Predictive: Balance bias and variance; sometimes sacrifice accuracy for precision
 - "Wrong" model may predict better than "correct" one
@@ -96,7 +96,7 @@ This is where the disparity between explanatory and predictive modeling emerges
 - Focus on prediction in machine learning and statistics
 - Importance of evaluating predictive power using holdout data
 
-# Modeling Differences
+# Modeling Differences (cut off??)
 
 Modeling can be broken down in a generic set of steps that vary when the focus changes from explanation to predicion
 
