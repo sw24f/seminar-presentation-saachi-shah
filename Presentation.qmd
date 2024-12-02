@@ -178,6 +178,9 @@ Modeling can be broken down in a generic set of steps that vary when the focus c
 -   **Model Evaluation**:
     -   Explanatory: Assess explanatory power (strength of relationship)
     -   Predictive: Assess predictive power (accuracy on new data)
+-   **Model Selection**:
+    -   Iterative process
+    -   Different criteria for explanatory vs. predictive contexts
 
 ## Use Model & Report
 
@@ -201,7 +204,7 @@ Modeling can be broken down in a generic set of steps that vary when the focus c
 -   **Explanatory**: Studying factors influencing heart disease (e.g., diet, lifestyle) to understand causation
 -   **Predictive**: Using patient data to predict who is likely to develop heart disease, regardless of causation
 
-**Takeaway**: The insights needed for prevention policies vs. medical forecasting differ significantly
+The insights needed for prevention policies vs. medical forecasting differ significantly
 
 # Implications for Data Science
 
@@ -209,18 +212,12 @@ Modeling can be broken down in a generic set of steps that vary when the focus c
 -   **Importance of Purpose-Driven Modeling**: Misalignment between model goals and applications can lead to significant real-world errors
 -   **Ethical Considerations**: Incorrect model application can have societal consequences (e.g., in policy or healthcare)
 
-# Practical Takeaways
+# Conclusion and Practical Takeaways
 
 1.  **Clarify Goals**: Define whether the goal is to explain or predict before modeling
 2.  **Choose Models Accordingly**: Select model types, validation, and evaluation criteria based on the goal
 3.  **Avoid Misuse**: Be cautious of applying explanatory models for prediction, and vice versa
 4.  **Communicate Assumptions**: Clearly state assumptions and limitations, especially if using a model outside its intended purpose
-
-# Conclusion
-
--   **Main Message**: "To Explain or To Predict?" urges practitioners to consciously distinguish between explanatory and predictive goals
--   **Shmueli’s Contribution**: Emphasizes the importance of matching model types to their specific goals, and the consequences of ignoring this distinction
--   **Enduring Relevance**: Shmueli's insights continue to guide best practices in data science, helping prevent misuse of models
 
 # Questions?
 
