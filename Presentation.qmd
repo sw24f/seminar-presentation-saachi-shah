@@ -30,7 +30,10 @@ format:
 
 ## Key Ideas
 
--   Differentiating between **explanatory modeling** (understanding data relationships) and **predictive modeling** (forecasting future outcomes).
+-   **Differentiating** between explanatory modeling (understanding data relationships) and predictive modeling (forecasting future outcomes)
+-   The common **misconception** that models with high explanatory power inherently possess high predictive power
+-   How the **processes** for building explanatory and predictive models differ
+-   The distinction between explanatory and predictive modeling has **practical implications** for scientific research and practice
 
 # Different Types of Modeling
 
